@@ -1,0 +1,91 @@
+#Builtin Configurations(DO NOT CHANGE THIS CONFIGURATIONS unless you know exactly what you are doing)
+
+enable_fp16_gpu: False
+enable_modelarts: False
+device_target: GPU
+run_distribute: False
+#======================================
+
+#Path for local
+#data_url:
+#train_url:
+#checkpoint_url:
+
+#======================================
+
+#Url for modelarts    (/Todo depend on Ascend)
+#
+#enable_profiling: False
+#data_path: "/cache/data"
+#output_path: "./saved"
+#load_path: "./checkpoint_path/"
+#device_target: "Ascend"
+#checkpoint_path: "./checkpoint/"
+#train_dir: "/cache/data/data_train"
+#test_dir: "/cache/data/data_test"
+#checkpoint_file_path: " "
+
+#======================================
+
+#Training options
+learning_rates: None
+lr_decay_mode: "cosine_decay_lr"
+min_lr: 0.000001
+max_lr: 0.001
+decay_epoch: 300
+milestone: None
+momentum: 0.9
+dataset_sink_mode: True
+batch_size: 8
+val_batch: 1
+epoch_size: 300
+train_dir: "/home/cxh/文档/ms3d/ModelNet40/"
+val_dir: "/home/cxh/文档/ms3d/ModelNet40/"
+num_classes: 40
+k: 20
+emb_dims: 1024
+keep_checkpoint_max: 10
+ckpt_save_dir: "/home/cxh/文档/seu3dlab/checkpoint/"
+dropout: 0.5
+
+#310 infer options
+device_id: 0
+ckpt_file: "./tools/best.ckpt"
+file_name: "DGCNN"
+file_format: "MINDIR"
+infer_batch_size: 1
+in_channels: 2
+roi_size: [ ]
+per_result_path: "./prrprocess_Result"
+post_result_path: "./result_Files"
+
+#seg train model
+num_point: 4096
+
+
+---
+#Help description for each configuration
+enable_modelarts: "Whether training on modelarts, default: False"
+enable_fp16_gpu: "Whether training on gpu with fp16, default: False"
+learning_rates: "A list of learning rates. default: None"
+lr_decay_mode: "Learning rate decay mode. default: cosine_decay_lr"
+min_lr: "The min learning rate default: 0.000001."
+max_lr: "The max learning rate. default: 0.001"
+decay_epoch: "Number of decay epochs. default: 300"
+milestone: "A list of milestone. default: None"
+momentum: "Momentum for the moving average. default: 0.9"
+dataset_sink_mode: 'The dataset sink mode.default: True'
+data_url: "Dataset url for obs"
+train_url: "Training output url for obs"
+checkpoint_url: "The location of checkpoint for obs"
+batch_size: 'Number of train batch size. default: 8'
+val_batch: 'Number of val batch size. default: 1'
+epoch_size: 'Train epoch size. default: 300'
+train_dir: 'Location of data.'
+val_dir: 'Location of data.'
+num_classes: "Number of classification. default: 40"
+k: 'Num of nearest neighbors to use. default: 20'
+emb_dims: 'Dimension of embeddings. default: 1024'
+keep_checkpoint_max: 'Max number of checkpoint files. default: 10'
+ckpt_save_dir: "Location of training outputs."
+dropout: "initial dropout rate. default: 0.5"

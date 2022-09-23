@@ -1,0 +1,68 @@
+#Builtin Configurations(DO NOT CHANGE THIS CONFIGURATIONS unless you know exactly what you are doing)
+
+enable_fp16_gpu: False
+enable_modelarts: False
+device_target: GPU
+run_distribute: False
+
+#======================================
+
+#Path for local
+#data_url:
+#train_url:
+#checkpoint_url:
+
+#======================================
+
+#Url for modelarts    (/Todo depend on Ascend)
+#
+#enable_profiling: False
+#data_path: "/cache/data"
+#output_path: "./saved"
+#load_path: "./checkpoint_path/"
+#device_target: "Ascend"
+#checkpoint_path: "./checkpoint/"
+#train_dir: "/cache/data/data_train"
+#test_dir: "/cache/data/data_test"
+#checkpoint_file_path: " "
+
+#======================================
+
+#Training options
+learning_rates: None
+lr_decay_mode: "cosine_decay_lr"
+min_lr: 0.000001
+max_lr: 0.001
+decay_epoch: 100
+milestone: None
+momentum: 0.9
+dataset_sink_mode: True
+batch_size: 4
+val_batch: 1
+epoch_size: 100
+train_dir: '/home/cxh/文档/ms3d/vision/mindvision/ms3d/dataset/data/indoor3d_sem_seg_hdf5_data/'
+val_dir: '/home/cxh/文档/ms3d/vision/mindvision/ms3d/dataset/data/indoor3d_sem_seg_hdf5_data/'
+num_classes: 13
+k: 20
+emb_dims: 1024
+keep_checkpoint_max: 10
+ckpt_save_dir: "/home/cxh/文档/seu3dlab/checkpoint/"
+dropout: 0.5
+num_point: 4096
+test_area: 5
+
+
+
+#310 infer options
+device_id: 0
+ckpt_file: "./tools/best.ckpt"
+file_name: "DGCNN"
+file_format: "MINDIR"
+infer_batch_size: 1
+in_channels: 2
+roi_size: [ ]
+per_result_path: "./prrprocess_Result"
+post_result_path: "./result_Files"
+
+
+
