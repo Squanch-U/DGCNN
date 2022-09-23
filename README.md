@@ -25,7 +25,7 @@ ModelNet40 dataset
 |  | Mean Class Acc | Overall Acc |
 | :---: | :---: | :---: |
 | Paper (1024 points) | 90.2 | 92.9 |
-| This repo (1024 points) | **  ** | **  ** |
+| This repo (1024 points) |  |  |
 
 &nbsp;
 ## Point Cloud Part Segmentation
@@ -45,7 +45,7 @@ ShapeNet part dataset
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
 | Shapes | | 2690 | 76 | 55 | 898 | 3758 | 69 | 787 | 392 | 1547 | 451 | 202 | 184 | 283 | 66 | 152 | 5271 | 
 | Paper | **85.2** | 84.0 | **83.4** | **86.7** | 77.8 | 90.6 | 74.7 | 91.2 | **87.5** | 82.8 | **95.7** | 66.3 | **94.9** | 81.1 | **63.5** | 74.5 | 82.6 |
-| This repo | ** ** | ** ** |   |  | *** | **** | **** | **** |  | ** ** | ** ** | ** ** |  | ** ** |  | ** ** | ** ** |
+| This repo |  |  |   |  |  |  | |  |  |  |  | |  |  |  |  |  |
 
 ### Ackonwledgements:
 We thank a lot for the official repo of [WangYueFt/dgcnn](https://github.com/WangYueFt/dgcnn/tree/master/pytorch).
