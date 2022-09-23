@@ -10,7 +10,19 @@ This repo is the mindspore implementation of **Dynamic Graph CNN for Learning on
 - Package: h5py, sklearn, plyfile
 
 &nbsp;
-## Contents
-- [Point Cloud Classification](#point-cloud-classification)
-- [Point Cloud Part Segmentation](#point-cloud-part-segmentation)
-- [Point Cloud Semantic Segmentation](#point-cloud-sementic-segmentation)
+## Point Cloud Classification
+### Run the training script:
+``` 
+python dgcnn_cls_train.py
+```
+### Run the evaluation script after training finished:
+``` 
+python dgcnn_cls_eval.py
+```
+### Performance:
+ModelNet40 dataset
+
+|  | Mean Class Acc | Overall Acc |
+| :---: | :---: | :---: |
+| Paper (1024 points) | 90.2 | 92.9 |
+| This repo (1024 points) | **  ** | **  ** |
