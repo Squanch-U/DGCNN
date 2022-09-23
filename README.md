@@ -9,3 +9,8 @@ This repo is the mindspore implementation of **Dynamic Graph CNN for Learning on
 - CUDA 11.1
 - Package: h5py, sklearn, plyfile
 
+&nbsp;
+## Contents
+- [Point Cloud Classification](#point-cloud-classification)
+- [Point Cloud Part Segmentation](#point-cloud-part-segmentation)
+- [Point Cloud Semantic Segmentation](#point-cloud-sementic-segmentation)
