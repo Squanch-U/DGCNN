@@ -5,7 +5,7 @@ This repo is the mindspore implementation of **Dynamic Graph CNN for Learning on
 ## Requirements
 - Ubuntu 20.04
 - Python 3.7
-- mindspore=1.8.1
+- mindspore 1.8.1
 - CUDA 11.1
 - Package: h5py, sklearn, plyfile
 
